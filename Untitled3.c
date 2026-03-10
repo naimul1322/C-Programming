@@ -1,16 +1,22 @@
 #include<stdio.h>
-int main(){
-
-int a,b,rem;
-scanf("%d %d",&a,&b);
-rem=a%b;
-while (rem!=0)
+int main()
 {
-    a=b;
-    b=rem;
-    rem=a%b;
-}
-printf("%d\n",b);
+
+    int i,j,n;
+    scanf("%d",&n);
+    for( i=1; i<=n; i++)
+    {
+        for(j=1; j<=i; j++)
+        {
+
+                    printf("* ");
 
 
+
+        }
+            printf("\n");
+
+    }
+
+    return 0;
 }
