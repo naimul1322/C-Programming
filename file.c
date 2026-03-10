@@ -5,27 +5,27 @@ int main()
     {
         FILE *file;
     char name[50];
-    file=fopen("sir.mp3","a");
+
+    file=fopen("information.txt","a");
 
     if(file==NULL)
     {
-        printf("file is not open");
+        printf("file does not exist");
     }
-    else
-    {
-        printf("\nfile is open \n");
+    else{
 
-       printf("Enter your information: ");
+    printf(" file is open\n");
+    printf("Enter your information: \n");
+    gets( name);
+    fprintf(file,"%s\n",name);
 
-       gets(name);
-       fputs(name,file);
-       fputs("\n",file);
-       printf("conformation");
+   // fputs( name,file);
+    fputs("\n",file);
+    printf("Enter the suessfully. \n");
+    fclose(file);
 
-
-
-        fclose(file);
     }
     }
+
     getch();
 }
