@@ -1,0 +1,15 @@
+#include<stdio.h>
+
+int main(){
+
+int num1=10;
+int num2=15;
+int temp;
+
+temp=num1;
+num1=num2;
+num2=temp;
+printf("%d",temp);
+return 0;
+
+}

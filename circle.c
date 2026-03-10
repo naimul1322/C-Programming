@@ -1,0 +1,10 @@
+#include<stdio.h>
+
+int main()
+{
+    float r, area;
+    scanf("%f",&r);
+    area=3.1416*pow(r,2);
+    printf("%.3f\n",area);
+    return 0;
+}

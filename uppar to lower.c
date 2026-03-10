@@ -1,0 +1,8 @@
+#include<stdio.h>
+ int main(){
+
+ char ch;
+ scanf("%c",&ch);
+ printf("the letter is %c",ch-32);
+
+ }
