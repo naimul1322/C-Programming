@@ -1,10 +1,22 @@
 #include<stdio.h>
-#include<math.h>
- int main()
- {
-     double x,y;
-     scanf("%lf",x);
-     y=(pow(x,3))-(6*pow(x,2)/19)+(42*x/71)-(3701/9993);
-     printf("%lf",y);
-     return 0;
- }
+int main()
+{
+    int arr1[5][3], sum[5]={0},avg,i;
+    for(int i=0; i<5; i++)
+    {
+        for(int j=0; j<3; j++)
+        {
+            scanf("%d ",&arr1[i][j]);
+            sum[i]+=arr1[i][j];
+
+        }
+
+    }
+    avg= sum[i]/3;
+    for(int i=0; i<5; i++)
+    {
+        printf("%d :  %d  :  %d\n", i+1,  sum[i],  avg);
+    }
+
+    return 0;
+}
