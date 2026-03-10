@@ -1,25 +1,18 @@
 #include<stdio.h>
+
 int main()
 {
-    int num,sum=0,temp,rem;
-    printf("Enter the positive number: ");
+    int num,temp,rem,sum=0;
+    printf("Enter the number: ");
     scanf("%d", &num);
     temp=num;
-    while(temp!=0)
+    while (temp!=0)
     {
-
         rem=temp%10;
-        sum=sum*10+rem;
+        sum=sum+rem;
         temp=temp/10;
     }
-    printf("%d is reverse number\n",sum);
+    printf("%d",sum);
 
-   if(num==sum)
-   {
-       printf("paliendrome");
-   }
-   else{
-    printf("not palirndrom");
-   }
     return 0;
 }
