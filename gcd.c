@@ -1,16 +1,18 @@
 #include<stdio.h>
 int main()
 {
-    int num1,num2,rem;
-    scanf("%d %d",&num1, &num2);
-    rem=num1%num2;
+    int a,b,rem;
+    scanf("%d %d", &a, &b);
+    rem=a%b;
+
     while(rem!=0)
     {
-        num1=num2;
-        num2=rem;
-        rem=num1%num2;
+        a=b;
+        b=rem;
+        rem=a%b;
     }
-    printf("the value is : %d",num2);
+    printf("%d",b);
+
 
     return 0;
 }

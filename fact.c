@@ -1,13 +1,16 @@
 #include<stdio.h>
+
+int fact(int i)
+{
+    if(i<=1)
+    {
+        return 1;
+    }
+    return i * fact(i-1);
+}
 int main()
 {
-    int fact=1,num,i;
-    scanf("%d",&num);
-    for(i=1;i<=num; i++)
-    {
-        fact=fact*i;
-    }
-    printf("%d",fact);
-
+    int i=9;
+    printf("%d",fact(i));
     return 0;
 }
