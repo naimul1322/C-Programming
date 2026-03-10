@@ -1,22 +1,24 @@
 #include<stdio.h>
 int main()
 {
-    int arr1[5][3], sum[5]={0},avg,i;
-    for(int i=0; i<5; i++)
-    {
-        for(int j=0; j<3; j++)
-        {
-            scanf("%d ",&arr1[i][j]);
-            sum[i]+=arr1[i][j];
+    int x,y,temp;
+    printf("Enter value of X: ");
+    scanf("%d",&x);
+    printf("Enter value of y: ");
+    scanf("%d",&y);
 
-        }
+    printf("before swaping:\n ");
+    printf(" X= %d\n",x);
+    printf(" Y= %d\n",y);
 
-    }
-    avg= sum[i]/3;
-    for(int i=0; i<5; i++)
-    {
-        printf("%d :  %d  :  %d\n", i+1,  sum[i],  avg);
-    }
+    temp=x;
+    x=y;
+    y=temp;
 
-    return 0;
+    printf("after the swaping:\n ");
+    printf(" X= %d\n",x);
+    printf(" Y= %d\n",y);
+
+
+    getch();
 }

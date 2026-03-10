@@ -1,11 +1,17 @@
-#include <stdio.h>
-#define pi 3.14159
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    printf("Enter the two interger number: ");
+    scanf("%d %d",&a,&b);
+    int rem=a%b;
 
-int main() {
-
-   double R;
-   scanf("%lf",&R);
-   printf("VOLUME = %.3lf\n",(4/3.0)*pi*R*R*R);
-
+    while(rem!=0)
+    {
+        a=b;
+        b=rem;
+        rem=a%b;
+    }
+    printf("%d",b);
     return 0;
 }
