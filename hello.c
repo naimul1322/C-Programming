@@ -1,17 +1,42 @@
 #include<stdio.h>
 int main()
 {
-    int a,b;
-    printf("Enter the two interger number: ");
-    scanf("%d %d",&a,&b);
-    int rem=a%b;
-
-    while(rem!=0)
+    while(1)
     {
-        a=b;
-        b=rem;
-        rem=a%b;
+      int num1,num2;
+    printf("Enter the two number : ");
+    scanf("%d %d",&num1,&num2);
+    printf("1.two number addtion\n");
+    printf("2.two number subtraction\n");
+    printf("3. two number multiplication\n");
+    printf("4. two number divison : \n");
+    printf("5. two number modulus: \n");
+    int n;
+    printf("Enter your choose: \n");
+    scanf("%d",&n);
+
+    switch(n){
+     case 1:
+    printf("the add is %d\n",num1+num2);
+    break;
+case 2:
+    printf("the substarction is %d\n",num1-num2);
+    break;
+case 3:
+    printf("the multipiction is %d\n",num1*num2);
+    break;
+case 4:
+    printf("the divison is %d\n",num1/num2);
+    break;
+    case 5:
+    printf("the mudulus is %d\n",num1%num2);
+    break;
+
+
+
     }
-    printf("%d",b);
+    }
+
+
     return 0;
 }
